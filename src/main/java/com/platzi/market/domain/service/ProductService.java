@@ -20,4 +20,28 @@ public class ProductService {
     public Optional<Product> getProduct(int productId) {
         return productRepository.getProduct(productId);
     }
+
+    public Optional<List<Product>> getByCategory(int categoryId) {
+        return productRepository.getByCategory(categoryId);
+    }
+
+    public Product save(Product product) {
+        return productRepository.save(product);
+    }
+
+    public boolean delete(int productId) {
+        return getProduct(productId).map(product -> {
+            productRepository.delete(productId);
+            return true;
+        }).orElse(false);
+
+        /* // Otra version
+        if(getProduct(productId).isPresent()) {
+            productRepository.delete(productId);
+            return true;
+        } else {
+            return false;
+          }
+        */
+    }
 }
