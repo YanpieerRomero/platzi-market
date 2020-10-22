@@ -4,28 +4,28 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class Purchase {
-    private int pruchaseId;
-    private String clienteId;
+    private int purchaseId;
+    private String clientId;
     private LocalDateTime date;
     private String paymentMethod;
     private String comment;
     private String state;
     private List<PurchaseItem> items;
 
-    public int getPruchaseId() {
-        return pruchaseId;
+    public int getPurchaseId() {
+        return purchaseId;
     }
 
-    public void setPruchaseId(int pruchaseId) {
-        this.pruchaseId = pruchaseId;
+    public void setPurchaseId(int purchaseId) {
+        this.purchaseId = purchaseId;
     }
 
-    public String getClienteId() {
-        return clienteId;
+    public String getClientId() {
+        return clientId;
     }
 
-    public void setClienteId(String clienteId) {
-        this.clienteId = clienteId;
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
     }
 
     public LocalDateTime getDate() {

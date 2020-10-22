@@ -21,7 +21,7 @@ public interface PurchaseItemMapper {
     @Mappings({
             @Mapping(target = "id.idCompra", ignore = true),
             @Mapping(target = "compra", ignore = true),
-            @Mapping(target = "Producto", ignore = true)
+            @Mapping(target = "producto", ignore = true)
     })
     ComprasProducto toComprasProducto(PurchaseItem item);
 
