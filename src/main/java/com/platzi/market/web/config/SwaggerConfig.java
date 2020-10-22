@@ -17,4 +17,5 @@ public class SwaggerConfig {
                  .apis(RequestHandlerSelectors.basePackage("com.platzi.market.web.controller"))
                  .build();
     }
+    // http://localhost:8090/platzi-market/api/swagger-ui.html
 }
